@@ -1,0 +1,78 @@
+@model OnlaynMiProject.DtoLayer.Dtos.GroupDtos.CreateGroupDto
+
+@{
+  ViewData["Title"] = "Index";
+  Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>Grup Oluştur</h3>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_content">
+                  <br />
+                  <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post">
+
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">Grup Adı 
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="title" class="form-control col-md-7 col-xs-12" asp-for="Title" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="content">Açıklama <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="content" class="form-control col-md-7 col-xs-12" asp-for="Content" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="city" class="control-label col-md-3 col-sm-3 col-xs-12">Şehir</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="city" class="form-control col-md-7 col-xs-12" asp-for="City" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="district" class="control-label col-md-3 col-sm-3 col-xs-12">İlçe</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="district" class="form-control col-md-7 col-xs-12" asp-for="District" required="required" type="text">
+                      </div>
+                    </div>
+
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                        <button class="btn btn-primary" type="button">Vazgeç</button>
+                        <button id="send" class="btn btn-success">Oluştur</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+              
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+      
+  </div>
+  </body>

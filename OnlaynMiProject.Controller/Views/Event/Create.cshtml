@@ -1,0 +1,102 @@
+@using Newtonsoft.Json
+@using OnlaynMiProject.EntityLayer.Concrete
+@model  OnlaynMiProject.DtoLayer.EventDtos.CreateEventDto
+
+@{
+  ViewData["Title"] = "Index";
+  Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="clearfix"></div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Etkinlik Oluştur</h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <br />
+                  <form class="form-horizontal form-label-left" method="post" novalidate>
+
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">Başlık 
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="title" class="form-control col-md-7 col-xs-12" asp-for="Title" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="content">Açıklama 
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea id="content" class="form-control" asp-for="Content"  required="required" placeholder='Açıklama yazınız...'></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="date">Tarih
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="date" id="date" class="form-control" name="Date" asp-for="Date" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="time">Saat
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="time" id="time" class="form-control" name="Time" asp-for="Time" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Gruplarınız</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <select class="form-control" asp-for="GroupId" asp-items="@(ViewData["Groups"] as IEnumerable<SelectListItem>)">
+                          <option>Choose option</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="city">Şehir
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="city" class="form-control col-md-7 col-xs-12" asp-for="City" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="district">İlçe 
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="district" class="form-control col-md-7 col-xs-12" asp-for="District" required="required" type="text">
+                      </div>
+                    </div>
+
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-md-offset-3">
+                        <button type="submit" class="btn btn-primary">Vazgeç</button>
+                        <button id="send" type="submit" class="btn btn-success">Etkinlik Oluştur</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+

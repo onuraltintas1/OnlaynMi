@@ -1,0 +1,91 @@
+@model List<OnlaynMiProject.EntityLayer.Concrete.Group>
+
+@{
+  ViewData["Title"] = "Index";
+  Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+
+
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Gruplarım </h3>
+              </div>
+
+            </div>
+            
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h3><strong><small>Lütfen grubunuzun etkinliklerini görüntülemek için grup isimlerinin üzerine tıklayınız.</small></strong>
+                      </h3>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      <!-- start project list -->
+                      <table class="table table-striped projects">
+                        <thead>
+                        <tr>
+                          <th style="width: 1%">#</th>
+                          <th style="width: 20%">Grup Adı</th>
+                          <th>
+                            <a>Grup Üyeleri</a>
+                          </th>
+                          <th>Project Progress</th>
+                          <th> </th>
+                          <th style="width: 20%">Düzenle</th>
+                        </tr>
+                        </thead>
+                        @foreach(var item in Model){
+                          <tbody>
+                          <tr>
+                            <td>#</td>
+                            <td>
+                              <a href="@Html.Raw(Url.Action("GroupPage","Group", new {groupId =item.GroupId}))">@item.Title</a>
+                              <br/>
+                              <small>@item.Content</small>
+                            </td>
+                            <td>
+                              <a href="@Html.Raw(Url.Action("Members", "Group", new { groupId = item.GroupId }))">Üyeleri Görüntüleyin</a>
+                            </td>
+                            <td>
+                              <a>#@item.InviteCode</a>
+                              <br/>  
+                              <small>@item.City/@item.District</small>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a>
+                              <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
+                            </td>
+                          </tr>
+
+                          </tbody>
+                        }
+                      </table>
+                      <!-- end project list -->
+
+                    </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+      </div>
+    </div>
+
+  </body>

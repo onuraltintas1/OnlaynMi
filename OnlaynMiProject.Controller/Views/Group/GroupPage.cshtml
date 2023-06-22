@@ -1,0 +1,74 @@
+@model List<OnlaynMiProject.EntityLayer.Concrete.Event>
+
+@{
+  ViewData["Title"] = "Index";
+  Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="">
+        <div class="page-title">
+          <div class="title_left">
+            <h3> Etkinlikler <small> Grubun'un Etkinlikleri</small> </h3>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="x_panel">
+
+              <div class="x_content">
+
+                <div class="row">
+                 @foreach (var item in Model)
+                 {
+                   <div class="col-md-55">
+
+                     <div class="thumbnail">
+                       <div class="image view view-first">
+                         <img style="width: 100%; display: block;" src="~/gentela-gh-pages/production/images/media.jpg" alt="image"/>
+                          <div  class="mask">
+                            <a href="@Html.Raw(Url.Action("EventPage","Event", new {eventId =item.EventId}))"><p>@if (!String.IsNullOrWhiteSpace(item.Content))
+                              {
+                              @((item.Content.Length > 90) ? item.Content[..90][..item.Content[..90].LastIndexOf(" ", StringComparison.Ordinal)] + "..." : item.Content)
+                              } </p> </a>
+                           <div class="tools tools-bottom">
+                             <a href="@Html.Raw(Url.Action("EventPage","Event", new {groupId =item.GroupId}))"><i class="fa fa-link"></i></a>
+                             <a href="#"><i class="fa fa-pencil"></i></a>
+                             <a href="#"><i class="fa fa-times"></i></a>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="caption">
+                         <p><small><strong> @if (!String.IsNullOrWhiteSpace(item.Title))
+                                            {
+                                              @((item.Title.Length > 40) ? item.Title[..40][..item.Title[..40].LastIndexOf(" ", StringComparison.Ordinal)] + "..." : item.Title  )
+                                            } </strong></small></p>
+                         @if (item.Title.Length < 25)
+                         {
+                           <br />
+                         }
+                         
+                         <p> <small>@item.Date.ToString("d MMM. dddd") @item.Time</small></p>
+                         <p> <small>  @item.City / @item.District</small></p>
+                       </div>
+                     </div>
+                   </div>
+                 }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>

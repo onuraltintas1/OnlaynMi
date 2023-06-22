@@ -1,0 +1,81 @@
+@model List<OnlaynMiProject.EntityLayer.Concrete.AppUser>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+
+<body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Üyeler Listesi</h3>
+              </div>
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for~/gentela-gh-pages.">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_content">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <ul class="pagination pagination-split">
+                        </ul>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      @foreach (var item in Model)
+                      {
+                        <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+
+                          <div class="well profile_view">
+
+                            <div class="col-sm-12">
+                              <h3 class="brief"><i>Kullanıcı Kartı</i></h3>
+                              <div class="left col-xs-7">
+                                <h3>@item.Name @item.Surname</h3>
+                                <p><strong>About: </strong>@item.City / @item.District </p>
+                                <p><strong>About: </strong> @item.Email</p>
+                              </div>
+                              <div class="right col-xs-5 text-center">
+                                <img src="~/gentela-gh-pages/production/images/user.png" alt="" class="img-circle img-responsive">
+                              </div>
+                            </div>
+                            <div class="col-xs-12 bottom text-center">
+                              <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-primary btn-xs">
+                                  <i class="fa fa-user"></i> View Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      }
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
