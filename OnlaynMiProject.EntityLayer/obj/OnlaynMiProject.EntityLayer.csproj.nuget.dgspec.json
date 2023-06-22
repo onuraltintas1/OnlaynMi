@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {}
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
         "projectName": "OnlaynMiProject.EntityLayer",
-        "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
+        "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
         "packagesPath": "C:\\Users\\altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\altin\\AppData\\Roaming\\NuGet\\NuGet.Config"

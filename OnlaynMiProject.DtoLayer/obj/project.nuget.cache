@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wP8b21BnonXoCFoxSo3XbPe7yzJmBGI+yz82UFIV4bXGTZjMxZVW4S59gVe0FO1xP7dNIT67oOnDbmZulCXWzg==",
+  "dgSpecHash": "Yn8N5XFNfu/Fju2mz9TeYOQkpCTN+Vb4Ux3ORgY04yrxtBwwNp7Z8sNHssiBlt9xvFn49L5rU4cReJoNCVhD3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj",
+  "projectFilePath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\altin\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\altin\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

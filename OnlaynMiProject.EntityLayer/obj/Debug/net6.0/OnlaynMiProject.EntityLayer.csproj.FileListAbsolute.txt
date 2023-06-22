@@ -26,3 +26,17 @@ C:\Users\altin\RiderProjects\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6
 C:\Users\altin\RiderProjects\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.pdb
 C:\Users\altin\RiderProjects\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.genruntimeconfig.cache
 C:\Users\altin\RiderProjects\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\ref\OnlaynMiProject.EntityLayer.dll
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\bin\Debug\net6.0\OnlaynMiProject.EntityLayer.deps.json
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\bin\Debug\net6.0\OnlaynMiProject.EntityLayer.runtimeconfig.json
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\bin\Debug\net6.0\OnlaynMiProject.EntityLayer.dll
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\bin\Debug\net6.0\OnlaynMiProject.EntityLayer.pdb
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.AssemblyInfo.cs
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.dll
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\refint\OnlaynMiProject.EntityLayer.dll
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.pdb
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\OnlaynMiProject.EntityLayer.genruntimeconfig.cache
+C:\Users\altin\OneDrive\Belgeler\GitHub\OnlaynMi\OnlaynMiProject.EntityLayer\obj\Debug\net6.0\ref\OnlaynMiProject.EntityLayer.dll

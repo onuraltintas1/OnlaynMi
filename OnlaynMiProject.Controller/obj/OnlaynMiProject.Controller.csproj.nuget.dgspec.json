@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj": {}
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj": {
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj",
         "projectName": "OnlaynMiProject.BusinessLayer",
-        "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\altin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,14 +26,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj"
               },
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj"
               },
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
               }
             }
           }
@@ -113,14 +113,14 @@
         }
       }
     },
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj": {
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj",
+        "projectUniqueName": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj",
         "projectName": "OnlaynMiProject.Controller",
-        "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj",
+        "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.Controller\\OnlaynMiProject.Controller.csproj",
         "packagesPath": "C:\\Users\\altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.Controller\\obj\\",
+        "outputPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.Controller\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\altin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -135,14 +135,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.BusinessLayer\\OnlaynMiProject.BusinessLayer.csproj"
               },
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj"
               },
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
               }
             }
           }
@@ -241,14 +241,14 @@
         }
       }
     },
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj": {
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj",
         "projectName": "OnlaynMiProject.DataAccessLayer",
-        "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\OnlaynMiProject.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\altin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -263,8 +263,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
               }
             }
           }
@@ -352,14 +352,14 @@
         }
       }
     },
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj": {
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj",
+        "projectUniqueName": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj",
         "projectName": "OnlaynMiProject.DtoLayer",
-        "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj",
+        "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\OnlaynMiProject.DtoLayer.csproj",
         "packagesPath": "C:\\Users\\altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.DtoLayer\\obj\\",
+        "outputPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.DtoLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\altin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -374,8 +374,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
+              "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj"
               }
             }
           }
@@ -455,14 +455,14 @@
         }
       }
     },
-    "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
+    "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
         "projectName": "OnlaynMiProject.EntityLayer",
-        "projectPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
+        "projectPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\OnlaynMiProject.EntityLayer.csproj",
         "packagesPath": "C:\\Users\\altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\altin\\RiderProjects\\OnlaynMi\\OnlaynMiProject.EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\altin\\OneDrive\\Belgeler\\GitHub\\OnlaynMi\\OnlaynMiProject.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\altin\\AppData\\Roaming\\NuGet\\NuGet.Config"
