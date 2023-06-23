@@ -1,4 +1,4 @@
-@using OnlaynMiProject.EntityLayer.Concrete
+@model UserProfileModel
 
 
 @{
@@ -7,122 +7,130 @@
 }
 
 
-  <div class="right_col" role="main">
-    <div class="">
-      <div class="page-title">
-        <div class="title_left">
-          <h3>Kullanıcı Profili</h3>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="x_panel">
-            <div class="x_content">
-              <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
-                <div class="profile_img">
-                  <div id="crop-avatar">
-                    <!-- Current avatar -->
-                    <img class="img-responsive avatar-view" src="/132.jpg" alt="Avatar" title="Change the avatar">
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Widget Designs</h3>
+              </div>
+
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
                   </div>
                 </div>
-                <h3></h3>
-
-
-                <ul class="list-unstyled user_data">
-                  <li><i class="fa fa-map-marker user-profile-icon"></i>
-                  </li>
-
-                  <li>
-                    <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
-                  </li>
-
-                  <li class="m-top-xs">
-                    <i class="fa fa-external-link user-profile-icon"></i>
-                    <a href="http://www.kimlabs.com/profile/" target="_blank">www.instagram.com</a>
-                  </li>
-                </ul>
-
-                <a href="/MyAccounts/Index" class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
-                <br/>
-
               </div>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+            </div>
 
+            <div class="clearfix"></div>
 
-                <!-- start of user-activity-graph -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="">
 
-                <!-- end of user-activity-graph -->
+                    <div class="row">
+                      <div class="col-md-12 col-xs-12 widget widget_tally_box">
+                        <div class="x_panel fixed_height_390">
+                          <div class="x_content">
+                            <div class="flex">
+                              <ul class="list-inline widget_profile_box">
+                                <li>
+                                  <a>
+                                    <i class="fa fa-instagram"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <img src="~/gentela-gh-pages/production/images/user.png" alt="..." class="img-circle profile_img">
+                                </li>
+                                <li>
+                                  <a>
+                                    <i class="fa fa-linkedin"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
 
-                <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                  <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Son Aktifliklerin</a>
-                    </li>
-                    <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Gruplarım</a>
-                    </li>
-                  </ul>
-                  <div id="myTabContent" class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                            <h3 class="name">@ViewBag.Name</h3>
 
-                      <!-- start recent activity -->
-                      <ul class="messages">
-                        <li>
-                          <img src="~/gentela-gh-pages/production/images/img.jpg" class="avatar" alt="Avatar">
-                          <div class="message_date">
-                            <h3 class="date text-info">24</h3>
-                            <p class="month">May</p>
-                          </div>
-                          <div class="message_wrapper">
-                            <h4 class="heading"></h4>
-                            <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
-                            <br/>
-                            <p class="url">
-                              <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
-                              <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                            <div class="flex">
+                              <ul class="list-inline count2">
+                                <li>
+                                  <h3>12</h3>
+                                  <span>Etkinlik</span>
+                                </li>
+                                <li>
+                                  <h3>14</h3>
+                                  <span>Takipçi</span>
+                                </li>
+                                <li>
+                                  <h3>12</h3>
+                                  <span>Takip</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <p>
+                              <strong>Email :</strong> @ViewBag.Email
+                              <br>
+                              <strong> Şehir :</strong> @ViewBag.City
                             </p>
                           </div>
-                        </li>
-                      </ul>
-                      <!-- end recent activity -->
+                        </div>
+                      </div>
 
+                      <div class="col-md-4">
+                        <div class="x_panel">
+                          <div class="x_title">
+                            <h2>Gruplarım</h2>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="x_content">
+                            @foreach (var item in Model.Groups)
+                            {
+                              <article class="media event">
+                                <a class="pull-left date">
+                                  <p class="month"> </p>
+                                  <p class="day"><br></p>
+                                </a>
+                                <div class="media-body">
+                                  <a class="title" href="#">@item.Title</a>
+                                  <p>@item.Content</p>
+                                </div>
+                              </article>
+                            }
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="x_panel">
+                          <div class="x_title">
+                            <h2>Katılacağım Etkinlikler</h2>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="x_content">
+                            @foreach (var item in Model.Events)
+                            {
+                              <article class="media event">
+                                <a class="pull-left date">
+                                  <p class="month">@item.Date.DayOfWeek</p>
+                                  <p class="day">@item.Date.Day</p>
+                                </a>
+                                <div class="media-body">
+                                  <a class="title" href="#">@item.Title</a>
+                                  <p>@item.Content</p>
+                                </div>
+                              </article>
+                            }
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  
-                    <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
-                      <!-- start user projects -->
-                      <table class="data table table-striped no-margin">
-                        <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>Grup Adı</th>
-                          <th>Grup Kurucusu</th>
-                          <th class="hidden-phone">Etkinlik Sayısı</th>
-                          <th>Buluşma Yüzdesi</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Kanks Manks</td>
-                          <td>Emre Köylüoğlu</td>
-                          <td class="hidden-phone">200</td>
-                          <td class="vertical-align-mid">
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-success" data-transitiongoal="35"></div>
-                            </div>
-                          </td>
-                        </tr>
-                        </tbody>
-                      </table>
-                      <!-- end user projects -->
-
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
