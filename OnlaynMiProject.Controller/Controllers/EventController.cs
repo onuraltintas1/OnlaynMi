@@ -45,7 +45,6 @@ public class EventController : Microsoft.AspNetCore.Mvc.Controller
         eventt.Content = createEventDto.Content;
         eventt.Date = DateOnly.FromDateTime(createEventDto.Date);
         eventt.Time = TimeOnly.FromTimeSpan(createEventDto.Time);
-        eventt.CreatedTime = DateTimeOffset.Now;
         eventt.GroupId= createEventDto.GroupId;
         eventt.City = createEventDto.City;
         eventt.District = createEventDto.District;

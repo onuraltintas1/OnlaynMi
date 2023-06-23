@@ -36,7 +36,8 @@ public class GroupController : Microsoft.AspNetCore.Mvc.Controller
     [HttpPost]
     public async Task<IActionResult> CreateGroup(CreateGroupDto createGroupDto)
     {
-        var user =  _userManager.FindByNameAsync(User.Identity.Name).Id;
+        var user = await _userManager.FindByNameAsync(User.Identity.Name);
+        var userId = user.Id;
         Random rnd = new Random();
         string code;
         code = rnd.Next(10000, 100000).ToString();
@@ -47,8 +48,9 @@ public class GroupController : Microsoft.AspNetCore.Mvc.Controller
         group.City = createGroupDto.City;
         group.District = createGroupDto.District;
         group.InviteCode = code;
-        group.UserId = user;
+        group.UserId = userId;
         group.ImageUrl = "adsasddas";
+        _groupManager.AddUserToGroup(group,user);
         _groupManager.TInsert(group);
       
             return RedirectToAction("Index", "Group");
