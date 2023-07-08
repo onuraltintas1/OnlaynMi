@@ -144,7 +144,7 @@ html , body{
     padding: 0 0 4px 0
 }
 .left_col {
-    background: #000000
+    background: linear-gradient(to left,#1F1C18,dimgrey , #0D5A4E)
 }
 .nav-sm .container.body .col-md-3.left_col {
     min-height: 100%;
@@ -231,7 +231,8 @@ html , body{
     display: none
 }
 .nav-sm ul.nav.child_menu li {
-    padding: 0 10px
+    padding: 0 10px;
+    background: linear-gradient(to right,#1F1C18,dimgrey , #0D5A4E);
 }
 .nav-sm ul.nav.child_menu li a {
     text-align: left !important
@@ -326,8 +327,7 @@ html , body{
 }
 .nav_menu {
     float: left;
-    background: #EDEDED;
-    border-bottom: 1px solid #D9DEE4;
+    background:linear-gradient(to right,#1F1C18,dimgrey , #0D5A4E);
     margin-bottom: 10px;
     width: 100%;
     position: relative
@@ -351,7 +351,7 @@ html , body{
     position: fixed
 }
 body .container.body .right_col {
-    background: #F7F7F7
+    background: dimgrey;
 }
 .nav-md .container.body .right_col {
     padding: 10px 20px 0;
@@ -360,7 +360,7 @@ body .container.body .right_col {
 .nav_title {
     width: 230px;
     float: left;
-    background: #2A3F54;
+    background: linear-gradient(to left,#1F1C18,dimgrey , #0D5A4E);
     border-radius: 0;
     height: 57px
 }
@@ -491,8 +491,8 @@ body .container.body .right_col {
     background: #D9DEE4
 }
 body {
-    color: #73879C;
-    background: #2A3F54;
+    color: black;
+    background: dimgrey;
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -651,7 +651,7 @@ h3,
     margin-bottom: 10px
 }
 a {
-    color: #000000;
+    color: black;
     text-decoration: none
 }
 a,
@@ -746,7 +746,7 @@ a:focus {
     padding-left: 36px
 }
 .nav-md ul.nav.child_menu li:before {
-    background: #425668;
+    background: #FFFFFF;
     bottom: auto;
     content: "";
     height: 8px;
@@ -759,7 +759,7 @@ a:focus {
     border-radius: 50%
 }
 .nav-md ul.nav.child_menu li:after {
-    border-left: 1px solid #425668;
+    border-left: 1px solid #FFFFFF;
     bottom: 0;
     content: "";
     left: 27px;
@@ -789,10 +789,10 @@ a:focus {
 }
 .nav.side-menu>li.current-page,
 .nav.side-menu>li.active {
-    border-right: 5px solid #1ABB9C
+    border-right: 5px solid #222625
 }
 .nav li.current-page {
-    background: rgba(255, 255, 255, 0.05)
+    background: linear-gradient(to left ,#1F1C18,dimgrey , #0D5A4E);
 }
 .nav li li li.current-page {
     background: none
@@ -802,7 +802,7 @@ a:focus {
 }
 .nav.side-menu>li.active>a {
     text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
-    background: linear-gradient(#334556, #2C4257), #2A3F54;
+    background: linear-gradient(to left ,#1F1C18,dimgrey , #0D5A4E);
     box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0
 }
 .navbar-brand,
@@ -818,6 +818,7 @@ a:focus {
     font-weight: 400;
     font-size: 22px;
     width: 100%;
+    background: linear-gradient(to left,#1F1C18,dimgrey , #0D5A4E);
     color: #ECF0F1 !important;
     margin-left: 0 !important;
     line-height: 59px;
@@ -877,7 +878,8 @@ a:focus {
     cursor: pointer
 }
 .toggle a i {
-    font-size: 26px
+    font-size: 26px;
+    color: white;
 }
 .nav.child_menu>li>a {
     color: rgba(255, 255, 255, 0.75);
@@ -911,7 +913,7 @@ a:focus {
     padding: 4px 6px
 }
 footer {
-    background: #fff;
+    background: linear-gradient(to right,#1F1C18,dimgrey , #0D5A4E);
     padding: 15px 20px;
     display: block
 }
@@ -1060,9 +1062,10 @@ h2 {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px 17px;
+    padding: 20px 17px;
     display: inline-block;
-    background: #fff;
+    background: transparent;
+    border-radius: 35px;
     border: 1px solid #E6E9ED;
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
@@ -1071,7 +1074,7 @@ h2 {
     transition: all .2s ease
 }
 .x_title {
-    border-bottom: 2px solid #E6E9ED;
+   
     padding: 1px 5px 6px;
     margin-bottom: 10px
 }
@@ -1499,7 +1502,7 @@ ul.msg_list li a .time {
     font-style: italic;
     font-weight: bold;
     position: absolute;
-    right: 35px
+    right: 13px
 }
 ul.msg_list li a .message {
     display: block !important;
@@ -2152,9 +2155,9 @@ button,
     margin-bottom: 10px
 }
 .ln_solid {
-    border-top: 1px solid #e5e5e5;
-    color: #ffffff;
-    background-color: #ffffff;
+    border-top: 1px solid transparent;
+    color: transparent;
+    background-color: transparent;
     height: 1px;
     margin: 20px 0
 }
@@ -2165,12 +2168,12 @@ span.section {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: inherit;
-    color: #333;
+    color: #e71313;
     border: 0;
-    border-bottom: 1px solid #e5e5e5
+    border-bottom: 1px solid transparent;
 }
 .form-control {
-    border-radius: 0;
+    border-radius: 33px;
     width: 100%
 }
 .form-horizontal .control-label {
@@ -2210,7 +2213,7 @@ legend {
     padding-right: 45px
 }
 .form-group {
-    margin-bottom: 10px
+    margin-bottom: 15px
 }
 .validate {
     margin-top: 10px
@@ -2336,7 +2339,7 @@ select.parsley-error {
     font-weight: bolder
 }
 .btn {
-    border-radius: 3px
+    border-radius: 39px
 }
 a.btn-success,
 a.btn-primary,
@@ -2664,7 +2667,7 @@ ul.timeline li {
     font-style: italic;
     font-size: .9375em;
     line-height: 1.3;
-    color: #aab6aa
+    color: #d71111
 }
 ul.social li {
     border: 0
@@ -2915,18 +2918,17 @@ ul.messages {
 }
 ul.messages li,
 .tasks li {
-    border-bottom: 1px dotted #e6e6e6;
     padding: 8px 0
 }
 ul.messages li img.avatar,
 img.avatar {
-    height: 32px;
-    width: 32px;
+    height: 38px;
+    width: 38px;
     float: left;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 20px;
     padding: 2px;
-    background: #f7f7f7;
+    background: #ffffff;
     border: 1px solid #e6e6e6
 }
 ul.messages li .message_date {
@@ -3119,14 +3121,18 @@ ul.project_files li a i {
 }
 .caption {
     padding: 14px 5px;
-    background: #F7F7F7
+    background: transparent;
 }
 .caption p {
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    color: white;
 }
 .thumbnail {
     height: 216px;
+    background: transparent;
+    border-radius: 20px;
     overflow: hidden
+    
 }
 .view {
     overflow: hidden;

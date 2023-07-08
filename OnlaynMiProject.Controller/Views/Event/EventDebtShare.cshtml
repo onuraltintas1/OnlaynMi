@@ -1,0 +1,92 @@
+@using OnlaynMiProject.EntityLayer.Concrete
+@using NuGet.Common
+@model DebtViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="clearfix"></div>
+        <div class="row">
+                             <div class="x_title">
+                                    <h2>Etkinlik Harcama Yönetimi </h2>
+                                    <div class="clearfix"></div>
+                                </div>
+            <div class="col-md-12">
+                 <form method="post" asp-action="EventDebtShare" novalidate> 
+                @foreach (var item in Model.AppUser)
+                {
+                    <div class="x_panel">
+                         
+                            <div class="x_content">
+
+                                <div>
+                                    <!-- end of user messages -->
+                                    <ul class="messages">
+                                        <li>
+                                            <img src="~/gentela-gh-pages/production/images/img.jpg" class="avatar" alt="Avatar">
+                                            <div class="message_wrapper">
+                                                <h4 class="heading">@item.Name @item.Surname </h4>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="sum">Harcanan: 
+                                                    </label>
+                                                    <div class="col-md-2">
+                                                        <input id="sum" class="form-control col-md-7 col-xs-12" asp-for="@item.Sum" required="required" type="text">
+                                                    </div>
+                                                </div>
+                                                <br/>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- end of user messages -->
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                }
+                <button id="send" type="submit"  class="btn btn-round btn-info">Hesapla</button>
+                  </form>
+                
+                    
+                    
+               
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Recent Activities </h2>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <div class="dashboard-widget-content">
+                        
+                                      <ul class="list-unstyled timeline widget">
+                                           @foreach (var mo in Model.TransferResultViewModel)
+                                           {
+                                               <li>
+                                                   <div class="block">
+                                                       <div class="block_content">
+                                                           <h2 class="title">
+                                                               <a>
+
+                                                                   <p> @mo.From.Name ——————→ @mo.To.Name : @mo.Pay</p>
+
+                                                               </a>
+                                                           </h2>
+
+                                                       </div>
+                                                   </div>
+                                               </li>
+                                           }
+                                          
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 using OnlaynMiProject.BusinessLayer.Abstract;
 using OnlaynMiProject.DataAccessLayer.Abstract;
+using OnlaynMiProject.EntityLayer;
 using OnlaynMiProject.EntityLayer.Concrete;
 
 namespace OnlaynMiProject.BusinessLayer.Concrete;
@@ -55,5 +56,15 @@ public class EventManager : IEventService
     public List<AppUser> GetAttendingUsers(int eventId)
     {
         return _eventDal.GetAttendingUsers(eventId);
+    }
+
+    public void AddTransfer(Transfer transfer)
+    {
+        _eventDal.AddTransfer(transfer);
+    }
+
+    public List<Transfer> GetTransfer(int eventId)
+    {
+       return _eventDal.GetTransfer(eventId);
     }
 }

@@ -225,6 +225,8 @@
     <_ContentIncludedByDefault Remove="Views\SendMoney\Index.cshtml" />
     <_ContentIncludedByDefault Remove="Views\GroupPage\Index.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Shared\Components\Active\Default.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Planing\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Planing\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

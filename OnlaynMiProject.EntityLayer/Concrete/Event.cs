@@ -14,6 +14,7 @@ public class Event
     public string District { get; set; }
     
     public List<EventAttendance> EventAttendances { get; set; }
+    public List<Transfer>  Transfers{ get; set; }
     
     public int AppUserId { get; set; }
     public AppUser AppUser { get; set; }

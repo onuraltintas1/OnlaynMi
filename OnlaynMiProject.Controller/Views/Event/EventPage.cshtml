@@ -7,75 +7,75 @@
 }
 
 <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
+<div class="container body">
+    <div class="main_container">
         <!-- page content -->
         <div class="right_col" role="main">
-          <div class="">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Daily active users <small>Sessions</small></h2>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                    <ul class="list-unstyled timeline">
-                        <li>
-                                 <div class="block">
-                                     <div class="tags">
-                                         <a href="" class="tag">
-                                             <span>Etkinlik</span>
-                                         </a>
-                                     </div>
-                                     <div class="block_content">
-                                         <h2 class="title">
-                                             <a>@Model.Event.Title</a>
-                                         </h2>
-                                         <div class="byline">
-                                             <span>@Model.Event.Date.ToString("d MMM. dddd") @Model.Event.Time</span>  <a> by @ViewData["AppUserName"] </a>
-                                         </div>
-                                         <p class="excerpt">
-                                             @Model.Event.Content
-                                         </p>
-                                     </div>
-                                     <form method="post" asp-action="EventPage">
-                                         <button type="submit" name="attendance" value="true" class="btn btn-round btn-info">Katılıyorum</button>
-                                         <button type="submit" name="attendance" value="false" class="btn btn-round btn-danger">Katılamıyorum</button>
-                                     </form>
-                                 </div>
-                             </li>
+            <div class="">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Daily active users <small>Sessions</small></h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <ul class="list-unstyled timeline">
+                                <li>
+                                    <div class="block">
+                                        <div class="tags">
+                                            <a href="" class="tag">
+                                                <span>Etkinlik</span>
+                                            </a>
+                                        </div>
+                                        <div class="block_content">
+                                            <h2 class="title">
+                                                <a>@Model.Event.Title</a>
+                                            </h2>
+                                            <div class="byline">
+                                                <span>@Model.Event.Date.ToString("d MMM. dddd") @Model.Event.Time</span>  <a> by @ViewData["AppUserName"] </a>
+                                            </div>
+                                            <p class="excerpt">
+                                                @Model.Event.Content
+                                            </p>
+                                        </div>
+                                        <form method="post" asp-action="EventPage">
+                                            <button type="submit" name="attendance" value="true" class="btn btn-round btn-info">Katılıyorum</button>
+                                            <button type="submit" name="attendance" value="false" class="btn btn-round btn-danger">Katılamıyorum</button>
+                                        </form>
+                                    </div>
+                                </li>
                         
-<div class="x_content">
-    <ul class="list-unstyled msg_list">
-        @foreach (var item in Model.EventAttendances)
-        {
-            <li>
-                <a>
-                    <span class="image">
-                        <img src="~/gentela-gh-pages/production/images/img.jpg" alt="img"/>
-                    </span>
-                    <span>
-                        <strong> <span>@item.Name @item.Surname</span>  </strong>
-                        <span class="time">@item.Email</span>
-                    </span>
-                    <span class="message">
-                        Katılıyorum.
-                    </span>
-                </a>
-            </li>
-        }
-    </ul>
-</div>
-                  </ul>
+                                <div class="x_content">
+                                    <ul class="list-unstyled msg_list">
+                                        @foreach (var item in Model.EventAttendances)
+                                        {
+                                            <li>
+                                                <a>
+                                                    <span class="image">
+                                                        <img src="~/gentela-gh-pages/production/images/img.jpg" alt="img"/>
+                                                    </span>
+                                                    <span>
+                                                        <strong> <span>@item.Name @item.Surname</span>  </strong>
+                                                        <span class="time">@item.District</span>
+                                                    </span>
+                                                    <span class="message">
+                                                        Katılıyorum.
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="clearfix"></div>
+            <div class="clearfix"></div>
         </div>
         <!-- /page content -->
-      </div>
     </div>
+</div>
  
     <!-- Custom Theme Scripts -->
 

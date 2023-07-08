@@ -38,11 +38,7 @@
                               {
                               @((item.Content.Length > 90) ? item.Content[..90][..item.Content[..90].LastIndexOf(" ", StringComparison.Ordinal)] + "..." : item.Content)
                               } </p> </a>
-                           <div class="tools tools-bottom">
-                             <a href="@Html.Raw(Url.Action("EventPage","Event", new {groupId =item.GroupId}))"><i class="fa fa-link"></i></a>
-                             <a href="#"><i class="fa fa-pencil"></i></a>
-                             <a href="#"><i class="fa fa-times"></i></a>
-                           </div>
+
                          </div>
                        </div>
                        <div class="caption">

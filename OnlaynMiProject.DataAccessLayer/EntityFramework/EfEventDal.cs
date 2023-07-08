@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OnlaynMiProject.DataAccessLayer.Abstract;
 using OnlaynMiProject.DataAccessLayer.Concrete;
 using OnlaynMiProject.DataAccessLayer.Repositories;
+using OnlaynMiProject.EntityLayer;
 using OnlaynMiProject.EntityLayer.Concrete;
 
 namespace OnlaynMiProject.DataAccessLayer.EntityFramework;
@@ -26,9 +27,7 @@ public class EfEventDal: GenericRepository<Event>, IEventDal
     } 
     public EventAttendance GetAttendanceForUser(int eventId, int userId)
     {
-        // EventAttendance tablosundan kullanıcının katılım durumunu alın
         var attendance = _context.EventAttendances.FirstOrDefault(a => a.EventId == eventId && a.AppUserId == userId);
-    
         return attendance;
     }
 
@@ -38,5 +37,16 @@ public class EfEventDal: GenericRepository<Event>, IEventDal
             .Where(ea => ea.EventId == eventId && ea.IsAttending)
             .Select(ea => ea.AppUser)
             .ToList();
+    }
+
+    public void AddTransfer(Transfer transfer)
+    {
+        _context.Transfers.Add(transfer);
+        _context.SaveChanges();
+    }
+
+    public List<Transfer> GetTransfer(int eventId)
+    {
+        return  _context.Transfers.Where(e => e.EventId == eventId).ToList();
     }
 }

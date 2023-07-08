@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using OnlaynMiProject.EntityLayer;
 
 namespace OnlaynMiProject.DataAccessLayer.Concrete
 {
@@ -20,9 +21,12 @@ namespace OnlaynMiProject.DataAccessLayer.Concrete
         public DbSet<UserGroup> UserGroups { get; set; }
         public DbSet<Event> Event { get; set; }
         public DbSet<EventAttendance> EventAttendances { get; set; }
+        public DbSet<Transfer> Transfers{ get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Transfer>().HasKey(tr => tr.TransferId);
             builder.Entity<UserGroup>()
                 .HasKey(ug => new { ug.UserId, ug.GroupId });
 

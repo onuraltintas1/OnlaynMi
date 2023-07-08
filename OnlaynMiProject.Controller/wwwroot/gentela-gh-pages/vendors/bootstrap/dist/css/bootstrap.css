@@ -5025,10 +5025,10 @@ a.thumbnail.active {
   color: #333;
 }
 .alert {
-  padding: 15px;
+  padding: 40px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 33px;
 }
 .alert h4 {
   margin-top: 0;

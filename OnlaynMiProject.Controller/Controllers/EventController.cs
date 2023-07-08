@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using OnlaynMiProject.BusinessLayer.Abstract;
 using OnlaynMiProject.BusinessLayer.Concrete;
 using OnlaynMiProject.Controller.Models;
+using OnlaynMiProject.DataAccessLayer.Concrete;
+using OnlaynMiProject.DtoLayer;
 using OnlaynMiProject.DtoLayer.EventDtos;
 using OnlaynMiProject.EntityLayer.Concrete;
 
@@ -77,13 +79,55 @@ public class EventController : Microsoft.AspNetCore.Mvc.Controller
     public async Task<IActionResult> EventPage(int eventId,bool attendance)
     {
         var user = await _userManager.FindByNameAsync(User.Identity.Name);
-        var newAttendance = new EventAttendance
+        var online = _eventService.GetAttendingUsers(eventId);
+
+        var attendingUsers= online.FirstOrDefault(a => a.Id == user.Id);
+        if (attendingUsers == null)
         {
-            EventId = eventId,
-            AppUserId = user.Id,
-            IsAttending = attendance
-        };
-        _eventService.CreateAttendance(newAttendance);
+            var newAttendance = new EventAttendance
+            {
+                EventId = eventId,
+                AppUserId = user.Id,
+                IsAttending = attendance
+            };
+            _eventService.CreateAttendance(newAttendance);
+        }
+        else
+        {
+            ViewBag.m = "kaydınız zaten mevcut!";
+        }
+    
+        
         return RedirectToAction("EventPage",new {eventId});
+    }
+    
+    [HttpGet("event/EventDebtShare/{eventId}")]
+    public async Task<IActionResult> EventDebtShare(int eventId )
+    { 
+        var online = _eventService.GetAttendingUsers(eventId);
+        var mal = _eventService.GetTransfer(eventId);
+        DebtViewModel viewModel = new DebtViewModel()
+        {
+
+            AppUser= online,
+            TransferResultViewModel = mal
+
+        };
+        return View(viewModel);
+    }
+ 
+    [HttpPost("event/EventDebtShare/{eventId}")]
+     public async Task<IActionResult> EventDebtShare( int eventId , int sum )
+    {
+        var online =  _eventService.GetAttendingUsers(eventId);
+        for (int i = 0; i < online.Count; i++)
+        {
+            online[i].Sum = online[i].Sum;
+            await _userManager.UpdateAsync(online [i]);
+        }
+        
+        TransferMethod transfer = new TransferMethod();
+       transfer.Transfers(online);
+        return RedirectToAction("EventDebtShare", new { eventId });
     }
 }

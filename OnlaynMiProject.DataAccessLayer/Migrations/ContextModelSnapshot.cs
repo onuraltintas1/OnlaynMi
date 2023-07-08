@@ -221,9 +221,15 @@ namespace OnlaynMiProject.DataAccessLayer.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("text");
 
+                    b.Property<decimal>("Sum")
+                        .HasColumnType("numeric");
+
                     b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<decimal>("TotalSum")
+                        .HasColumnType("numeric");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("boolean");
@@ -441,6 +447,37 @@ namespace OnlaynMiProject.DataAccessLayer.Migrations
                     b.ToTable("UserGroups");
                 });
 
+            modelBuilder.Entity("OnlaynMiProject.EntityLayer.Transfer", b =>
+                {
+                    b.Property<int>("TransferId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("TransferId"));
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("FromId")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("Pay")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("ToId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("TransferId");
+
+                    b.HasIndex("EventId");
+
+                    b.HasIndex("FromId");
+
+                    b.HasIndex("ToId");
+
+                    b.ToTable("Transfers");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("OnlaynMiProject.EntityLayer.Concrete.AppRole", null)
@@ -586,6 +623,33 @@ namespace OnlaynMiProject.DataAccessLayer.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("OnlaynMiProject.EntityLayer.Transfer", b =>
+                {
+                    b.HasOne("OnlaynMiProject.EntityLayer.Concrete.Event", "Event")
+                        .WithMany("Transfers")
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlaynMiProject.EntityLayer.Concrete.AppUser", "From")
+                        .WithMany()
+                        .HasForeignKey("FromId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlaynMiProject.EntityLayer.Concrete.AppUser", "To")
+                        .WithMany()
+                        .HasForeignKey("ToId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
+
+                    b.Navigation("From");
+
+                    b.Navigation("To");
+                });
+
             modelBuilder.Entity("OnlaynMiProject.EntityLayer.Concrete.AppUser", b =>
                 {
                     b.Navigation("EventAttendances");
@@ -605,6 +669,8 @@ namespace OnlaynMiProject.DataAccessLayer.Migrations
             modelBuilder.Entity("OnlaynMiProject.EntityLayer.Concrete.Event", b =>
                 {
                     b.Navigation("EventAttendances");
+
+                    b.Navigation("Transfers");
                 });
 
             modelBuilder.Entity("OnlaynMiProject.EntityLayer.Concrete.Group", b =>

@@ -54,7 +54,7 @@ namespace OnlaynMiProject.Controller.Controllers
                     bodyBuilder.TextBody = "Kayıt işlemini gerçekleştirmek için onay kodunuz:" + code;
                     mimeMessage.Body = bodyBuilder.ToMessageBody();
 
-                    mimeMessage.Subject = "Easy Cash Onay Kodu";
+                    mimeMessage.Subject = "Online Mi Onay Kodu";
 
                     SmtpClient client = new SmtpClient();
                     client.Connect("smtp.gmail.com", 587, false);
@@ -78,4 +78,3 @@ namespace OnlaynMiProject.Controller.Controllers
         }
     }
 }
-//demoprojelerkurs@gmail.com
